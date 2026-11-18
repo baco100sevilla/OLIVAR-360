@@ -1,0 +1,3 @@
+# Complemento opcional para exportar el gráfico PNG.
+-r requirements.txt
+matplotlib
