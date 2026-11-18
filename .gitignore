@@ -1,0 +1,27 @@
+# Entornos, cachés, temporales y secretos
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+.env
+.env.*
+*.pyc
+*.bak
+~$*
+*.tmp
+.DS_Store
+Thumbs.db
+
+# No publicar directamente ficheros de datos, copias o informes locales sin revisión
+*.pbix
+*.pbit
+*.xlsx
+*.xls
+*.csv
+*.zip
+*.pdf
+*.xml
+*.parquet
+*.sqlite
+*.db
