@@ -1,4 +1,4 @@
-# 🫒 OLIVAR 360°
+# OLIVAR 360°
 
 **Análisis del sector oleícola andaluz (2020–2026)**  
 *Portfolio de Data Analytics y Business Intelligence · Power BI · Python · SQL/DAX*
@@ -14,21 +14,29 @@ Explorar cómo la variabilidad climática, la producción, los precios y la estr
 ## Dashboard: cuatro páginas
 
 | Página | Contenido |
-|---|---|
+| --- | --- |
 | 01 · Panorama del sector | Producción regional y provincial, precios de referencia, tendencias y variaciones interanuales. |
 | 02 · Costes y rentabilidad | Costes estimados €/kg, escenarios, márgenes estimados y simulador de volumen. |
 | 03 · Clima, cosecha y precios | Precipitación, días de calor, producción y gráficos descriptivos de dispersión. |
 | 04 · Competitividad del olivar | Importaciones españolas desde Túnez, valor unitario comercial y costes técnicos estimados de Andalucía. |
 
-## Capturas
+## Capturas del dashboard
 
-*Incorporar capturas propias del informe Power BI, sin incluir datos privados ni interfaces de edición.*
+### 01 · Panorama del sector
 
-| Panorama | Costes | Clima | Competitividad |
-|---|---|---|---|
-| [Ver captura](imagenes/01_panorama.png) | [Ver captura](imagenes/02_costes.png) | [Ver captura](imagenes/03_clima.png) | [Ver captura](imagenes/04_competitividad.png) |
+![Panorama del sector](imagenes/01_panorama.png)
 
-> Las imágenes están pendientes de añadir a la carpeta `imagenes/`. Los enlaces funcionarán cuando se guarden esos archivos con los nombres indicados.
+### 02 · Costes y rentabilidad
+
+![Costes y rentabilidad](imagenes/02_costes.png)
+
+### 03 · Clima, cosecha y precios
+
+![Clima, cosecha y precios](imagenes/03_clima.png)
+
+### 04 · Competitividad del olivar
+
+![Competitividad del olivar](imagenes/04_competitividad.png)
 
 ## Hallazgos ilustrativos
 
