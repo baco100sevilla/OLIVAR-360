@@ -5,6 +5,10 @@
 
 > **Estado:** Dashboard de cuatro páginas terminado y revisado visual y funcionalmente (noviembre de 2026). La auditoría de fuentes, supuestos y cálculos se documenta por separado; no debe interpretarse como certificación externa.
 
+**Documentación técnica:** [Modelo Power BI, relaciones y DAX](docs/MODELO_POWER_BI.md) · [Python: instalación, uso y pruebas](scripts/README.md).
+
+El inventario verificado de `OLIVAR_360_Simulador` registra **42 tablas, 62 relaciones y 40 objetos de medida**, de los cuales **39 tienen expresión y uno carece de ella**. El detalle del modelo distingue tablas de negocio, auxiliares y calendarios automáticos. Siguen pendientes la **agregación de lluvia con varias provincias** y la **validación final de la corrección decimal**; la revisión visual no cierra esos riesgos.
+
 ## Objetivo
 
 Explorar cómo la variabilidad climática, la producción, los precios y la estructura de costes se relacionan con la situación económica del sector oleícola andaluz; añadir contexto de comercio internacional mediante las importaciones españolas de aceite de oliva desde Túnez.
@@ -19,6 +23,19 @@ Explorar cómo la variabilidad climática, la producción, los precios y la estr
 | 02 · Costes y rentabilidad | Costes estimados €/kg, escenarios, márgenes estimados y simulador de volumen. |
 | 03 · Clima, cosecha y precios | Precipitación, días de calor, producción y gráficos descriptivos de dispersión. |
 | 04 · Competitividad del olivar | Importaciones españolas desde Túnez, valor unitario comercial y costes técnicos estimados de Andalucía. |
+
+## Análisis reproducible con Python
+
+El proyecto incorpora un script de análisis exploratorio de datos oleícolas desarrollado con Python y Pandas.
+
+- **Validación de datos:** control de campañas, provincias, claves duplicadas y valores inválidos.
+- **Análisis:** resumen de producción y precipitaciones y correlación regional exploratoria.
+- **Reproducibilidad:** entrada Excel configurable, dependencias documentadas y pruebas automatizadas.
+- **Calidad:** 18 pruebas superadas con datos sintéticos durante la preparación de la versión publicable.
+
+**Código y guía de ejecución:** [Ver carpeta Python](scripts/README.md).
+
+**Nota metodológica:** la correlación regional calculada por este script no equivale al análisis agroclimático ajustado documentado en el informe.
 
 ## Capturas del dashboard
 
@@ -62,7 +79,7 @@ Power BI Desktop, Power Query, DAX, Python/Pandas, pruebas automatizadas, Visual
 
 ## Reproducibilidad y acceso a los datos
 
-El informe se construyó sobre archivos y scripts locales de trabajo. **Este paquete publica documentación, no todos los datos originales ni un `.pbix` verificado.** Si se decide añadir código, datos autorizados o una versión publicable del PBIX, se revisarán licencias, procedencia, privacidad y tamaño antes de subirlos.
+El informe se construyó sobre archivos y scripts locales de trabajo. **Este paquete contiene documentación, capturas y un script Python con pruebas; no incluye los datos originales ni un `.pbix` verificado para redistribución.** La [guía de Python](scripts/README.md) describe la entrada autorizada necesaria y su ejecución; la [documentación del modelo](docs/MODELO_POWER_BI.md) recoge la estructura auditada, cinco expresiones DAX reales y los límites de reproducción. Si se decide añadir más código, datos autorizados o una versión publicable del PBIX, se revisarán licencias, procedencia, privacidad y tamaño antes de subirlos.
 
 ## Autoría y licencia
 
